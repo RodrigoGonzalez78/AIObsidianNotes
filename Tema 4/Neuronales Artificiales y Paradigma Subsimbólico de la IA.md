@@ -49,7 +49,8 @@ La arquitectura define cómo se interconectan las neuronas y se organizan en cap
     - **Recurrentes:** Tienen retroalimentación (feedback). Tienen "memoria" y son útiles para reconocimiento de voz (ej. Red de Hopfield).
     - **Totalmente vs. Parcialmente Conectadas:** Depende de si todas las neuronas de una capa se unen con todas las de la siguiente.
         
-
+https://www.datacamp.com/es/tutorial/feed-forward-neural-networks-explained
+https://www.datacamp.com/es/tutorial/introduction-to-convolutional-neural-networks-cnns
 ---
 
 ### 5. Funciones de Activación
@@ -66,7 +67,7 @@ Limitan el rango de amplitud de la salida de la neurona (usualmente a $[0, 1]$ o
 - **ReLU (Rectified Linear Unit):** Opción por defecto en aprendizaje profundo (Deep Learning) y redes convolucionales (CNN) por su simplicidad de cálculo .
 ![[Pasted image 20251202163152.png]]
 - **SoftMax:** Generalización de la logística para clasificación multiclase (convierte valores en probabilidades).
-- ![[Pasted image 20251202163857.png]]
+![[Pasted image 20251202163857.png]]
 
 ---
 
@@ -132,7 +133,6 @@ Aquí es donde la cosa cambia. En lugar de sumar la distancia, **elevamos la dis
 ### 4. El Puente: RMSE (Raíz del Error Cuadrático Medio)
 
 - **RMSE:**
-    
     - _¿Qué es?_ A la fórmula anterior (MSE) le aplicamos una raíz cuadrada al final.
     - _¿Para qué?_ Para volver a las unidades originales. Si el MSE estaba en "dólares cuadrados", el RMSE vuelve a estar en "dólares".
     - _Ventaja:_ Mantiene la propiedad de "castigar" severamente los errores grandes (porque viene del MSE), pero el resultado final es un número que puedes entender (como el MAE).
